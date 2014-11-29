@@ -1,0 +1,158 @@
+<!--
+<ul>
+	<li>Be as specific as possible in your instructions to eliminate ambiguity. For example, when asking workers to extract texts from an image, ask workers to type the texts exactly as shown in the image including capitalization, spaces and punctuations.</li>
+	<li>Include an example of a right answer and a wrong answer. Highlight important information where appropriate.</li>
+	<li>Clarify what you expect if a HIT is not doable because of missing data or other problems.</li>
+</ul>
+--!>
+
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">.alert{
+	font-weight: bold;
+	font-size: 16px;
+}
+.answer{
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+ 
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  padding: 0 20px;
+}
+</style>
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p><strong>Before you fill out the survey, please visit the following website : </strong></p>
+<a href="$http://www.success-equation.com/" target="_blank">The Success Equation</a></div>
+
+<p style="margin-left: 20px;"><strong>And answer the following questions: </strong></p>
+
+<p class="alert">Note that if the majority&nbsp;of your answers to these questions are incorrect, your HIT may not be accepted</p>
+Who is the publisher for The Success Equation?: <input class="answer" id="q1" name="q1" type="text" /><br />
+What email address should send any questions or feedback relating to the site to?: <input class="answer" id="q2" name="q2" type="text" /><br />
+If player 1 has a 51% chance of winning one point, what is the probability they will win a five set match (use the tennis simulation page)?: <input class="answer" id="q4" name="q4" type="text" /><br />
+<br />
+<br />
+&nbsp;</div>
+<!-- End Instructions --><!-- Content Body --><!-- <h3>Recognition rather than recall</h3> -->
+
+<hr />
+<div>
+<h4>I found myself in situations where I could not go back to a previous state</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el19-1">Strongly disagree &nbsp;</label> <input id="el19-1" name="el19" type="radio" value="1" /></li>
+	<li class="likert"><input id="el19-2" name="el19" type="radio" value="2" /></li>
+	<li class="likert"><input id="el19-3" name="el19" type="radio" value="3" /></li>
+	<li class="likert"><input id="el19-4" name="el19" type="radio" value="4" /></li>
+	<li class="likert"><input id="el19-5" name="el19" type="radio" value="5" /> <label for="el19-5"> &nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp; <!-- <h3>Consistency and Standard</h3> -->
+
+<hr />
+<div>
+<h4>Similar websites I&#39;ve used before for the same purpose have helped me understand how to use this one.</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el20-1">Strongly disagree &nbsp;</label> <input id="el20-1" name="el20" type="radio" value="1" /></li>
+	<li class="likert"><input id="el20-2" name="el20" type="radio" value="2" /></li>
+	<li class="likert"><input id="el20-3" name="el20" type="radio" value="3" /></li>
+	<li class="likert"><input id="el20-4" name="el20" type="radio" value="4" /></li>
+	<li class="likert"><input id="el20-5" name="el20" type="radio" value="5" /> <label for="el20-5"> &nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>This website was very different from some others I&#39;ve used to do the same thing, so it was hard to understand how to do things.</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el21-1">Strongly disagree &nbsp;</label> <input id="el21-1" name="el21" type="radio" value="1" /></li>
+	<li class="likert"><input id="el21-2" name="el21" type="radio" value="2" /></li>
+	<li class="likert"><input id="el21-3" name="el21" type="radio" value="3" /></li>
+	<li class="likert"><input id="el21-4" name="el21" type="radio" value="4" /></li>
+	<li class="likert"><input id="el21-5" name="el21" type="radio" value="5" /><label for="el21-5"> &nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp; <!-- <h3>Match between System and the Real World</h3> -->
+
+<hr />
+<div>
+<h4>The website used very technical terminology that I had trouble understanding</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el22-1">Strongly disagree &nbsp;</label> <input id="el22-1" name="el22" type="radio" value="1" /></li>
+	<li class="likert"><input id="el22-2" name="el22" type="radio" value="2" /></li>
+	<li class="likert"><input id="el22-3" name="el22" type="radio" value="3" /></li>
+	<li class="likert"><input id="el22-4" name="el22" type="radio" value="4" /></li>
+	<li class="likert"><input id="el22-5" name="el22" type="radio" value="5" /><label for="el22-5"> &nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>The information was presented logically, and I could understand what it meant</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el23-1">Strongly disagree &nbsp;</label> <input id="el23-1" name="el23" type="radio" value="1" /></li>
+	<li class="likert"><input id="el23-2" name="el23" type="radio" value="2" /></li>
+	<li class="likert"><input id="el23-3" name="el23" type="radio" value="3" /></li>
+	<li class="likert"><input id="el23-4" name="el23" type="radio" value="4" /></li>
+	<li class="likert"><input id="el23-5" name="el23" type="radio" value="5" /><label for="el23-5"> &nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>The website used vocabulary familiar to me</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el24-1">Strongly disagree &nbsp;</label> <input id="el24-1" name="el24" type="radio" value="1" /></li>
+	<li class="likert"><input id="el24-2" name="el24" type="radio" value="2" /></li>
+	<li class="likert"><input id="el24-3" name="el24" type="radio" value="3" /></li>
+	<li class="likert"><input id="el24-4" name="el24" type="radio" value="4" /></li>
+	<li class="likert"><input id="el24-5" name="el24" type="radio" value="5" /><label for="el24-5">&nbsp; &nbsp; Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>The website&#39;s information was convoluted and too technical for me to understand</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el25-1">Strongly disagree &nbsp;</label> <input id="el25-1" name="el25" type="radio" value="1" /></li>
+	<li class="likert"><input id="el25-2" name="el25" type="radio" value="2" /></li>
+	<li class="likert"><input id="el25-3" name="el25" type="radio" value="3" /></li>
+	<li class="likert"><input id="el25-4" name="el25" type="radio" value="4" /></li>
+	<li class="likert"><input id="el25-5" name="el25" type="radio" value="5" /><label for="el25-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+</div>
+
+<div>
+<h4>Plesae mention any other comments about the design of the website here.</h4>
+<input name="comments" style="height:100px; width:400px;" type="text" /></div>
+<br />
+<!-- End Content Body --></section>
+<!-- close container -->
+<style type="text/css">fieldset {
+    padding: 10px;
+    background:#fbfbfb;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+</style>

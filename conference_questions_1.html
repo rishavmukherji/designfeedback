@@ -1,0 +1,163 @@
+<!--
+<ul>
+	<li>Be as specific as possible in your instructions to eliminate ambiguity. For example, when asking workers to extract texts from an image, ask workers to type the texts exactly as shown in the image including capitalization, spaces and punctuations.</li>
+	<li>Include an example of a right answer and a wrong answer. Highlight important information where appropriate.</li>
+	<li>Clarify what you expect if a HIT is not doable because of missing data or other problems.</li>
+</ul>
+--!>
+
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">.alert{
+	font-weight: bold;
+	font-size: 16px;
+}
+.answer{
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+ 
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  padding: 0 20px;
+}
+</style>
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p><strong>Before you fill out the survey, please visit the following website : </strong></p>
+<a href="$http://www.harvardusindiainitiative.com/" target="_blank">Harvard US-Indian Initiative</a></div>
+
+<p style="margin-left: 20px;"><strong>And answer the following questions: </strong></p>
+
+<p class="alert">Note that if the majority&nbsp;of your answers to these questions are incorrect, your HIT may not be accepted</p>
+Who is the president of the Executive Board?: <input class="answer" id="q1" name="q1" type="text" /><br />
+When was the last event organized by this organization?: <input class="answer" id="q2" name="q2" type="text" /><br />
+Try and register for the upcoming conference in India. What is the "Form Name" shown when you try to register? (Don't worry, your registrations for the conference won't be accepted): <input class="answer" id="q4" name="q4" type="text" /><br />
+<br />
+<br />
+&nbsp;</div>
+<!-- End Instructions --><!-- Content Body --><!-- <h3>Recognition rather than recall</h3> -->
+
+<hr />
+<div>
+<h4>I had to give the website the same information multiple times to get it to do something</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el0-1">Strongly disagree &nbsp;</label> <input id="el0-1" name="el0" type="radio" value="1" /></li>
+	<li class="likert"><input id="el0-2" name="el0" type="radio" value="2" /></li>
+	<li class="likert"><input id="el0-3" name="el0" type="radio" value="3" /></li>
+	<li class="likert"><input id="el0-4" name="el0" type="radio" value="4" /></li>
+	<li class="likert"><input id="el0-5" name="el0" type="radio" value="5" /><label for="el0-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>
+<h4>I could understand how to do what I wanted to without trouble</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el2-1">Strongly disagree &nbsp;</label> <input id="el2-1" name="el2" type="radio" value="1" /></li>
+	<li class="likert"><input id="el2-2" name="el2" type="radio" value="2" /></li>
+	<li class="likert"><input id="el2-3" name="el2" type="radio" value="3" /></li>
+	<li class="likert"><input id="el2-4" name="el2" type="radio" value="4" /></li>
+	<li class="likert"><input id="el2-5" name="el2" type="radio" value="5" /><label for="el2-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>I could not figure out how to do something, and the website would not help me</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el3-1">Strongly disagree &nbsp;</label> <input id="el3-1" name="el3" type="radio" value="1" /></li>
+	<li class="likert"><input id="el3-2" name="el3" type="radio" value="2" /></li>
+	<li class="likert"><input id="el3-3" name="el3" type="radio" value="3" /></li>
+	<li class="likert"><input id="el3-4" name="el3" type="radio" value="4" /></li>
+	<li class="likert"><input id="el3-5" name="el3" type="radio" value="5" /><label for="el3-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp; <!-- <h3>Help and Documentation</h3> -->
+
+<hr />
+<div>
+<h4>If I needed help, the website presented it to me in a way that I could understand</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el4-1">Strongly disagree &nbsp;</label> <input id="el4-1" name="el4" type="radio" value="1" /></li>
+	<li class="likert"><input id="el4-2" name="el4" type="radio" value="2" /></li>
+	<li class="likert"><input id="el4-3" name="el4" type="radio" value="3" /></li>
+	<li class="likert"><input id="el4-4" name="el4" type="radio" value="4" /></li>
+	<li class="likert"><input id="el4-5" name="el4" type="radio" value="5" /><label for="el4-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>I could find helpful information on the website if I couldn&#39;t understand something</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el5-1">Strongly disagree &nbsp;</label> <input id="el5-1" name="el5" type="radio" value="1" /></li>
+	<li class="likert"><input id="el5-2" name="el5" type="radio" value="2" /></li>
+	<li class="likert"><input id="el5-3" name="el5" type="radio" value="3" /></li>
+	<li class="likert"><input id="el5-4" name="el5" type="radio" value="4" /></li>
+	<li class="likert"><input id="el5-5" name="el5" type="radio" value="5" /><label for="el5-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp; &nbsp; <!-- <h3>Error Prevention</h3>
+ -->
+
+<hr />
+<div>
+<h4>The website often did not act as I thought it would</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el8-1">Strongly disagree &nbsp;</label> <input id="el8-1" name="el8" type="radio" value="1" /></li>
+	<li class="likert"><input id="el8-2" name="el8" type="radio" value="2" /></li>
+	<li class="likert"><input id="el8-3" name="el8" type="radio" value="3" /></li>
+	<li class="likert"><input id="el8-4" name="el8" type="radio" value="4" /></li>
+	<li class="likert"><input id="el8-5" name="el8" type="radio" value="5" /><label for="el8-5">&nbsp; &nbsp; Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;
+
+<div>
+<h4>I found I could navigate the website without any problems</h4>
+
+<ul class="likert">
+	<li class="likert"><label for="el9-1">Strongly disagree &nbsp;</label> <input id="el9-1" name="el9" type="radio" value="1" /></li>
+	<li class="likert"><input id="el9-2" name="el9" type="radio" value="2" /></li>
+	<li class="likert"><input id="el9-3" name="el9" type="radio" value="3" /></li>
+	<li class="likert"><input id="el9-4" name="el9" type="radio" value="4" /></li>
+	<li class="likert"><input id="el9-5" name="el9" type="radio" value="5" /><label for="el9-5">&nbsp; &nbsp;Strongly agree</label></li>
+</ul>
+</div>
+&nbsp;</div>
+
+<div>
+	<h4> Plesae mention any other comments about the design of the website here. </h4>
+	<input type="text" name="comments" style="height:100px; width:400px;">
+</div>
+<br />
+<!-- End Content Body --></section>
+<!-- close container -->
+<style type="text/css">fieldset {
+    padding: 10px;
+    background:#fbfbfb;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+</style>
