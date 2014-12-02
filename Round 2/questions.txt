@@ -1,0 +1,26 @@
+Error Prevention	I was asked if I was sure about doing something that would make a change
+Error Prevention	I found I could navigate the website without any problems
+Error Prevention	The website often did not act as I thought it would
+
+Consistency and Standard	Similar websites I've used before for the same purpose have helped me understand how to use this one.
+Consistency and Standard	This website was very different from some others I've used to do the same thing, so it was hard to understand how to do things.
+
+Aesthetic and Minimalist Design	I could navigate the website easily, and didn't see anything unnecessary
+Aesthetic and Minimalist Design	The website was cluttered, and I often had difficulty figuring out what to do next
+
+Help and Documentation	I could find helpful information on the website if I couldn't understand something
+Help and Documentation	If I needed help, the website presented it to me in a way that I could understand
+
+
+Visibility of System Status	I found it difficult to understand what was going on
+Visibility of System Status	I could understand what the website was doing
+
+Error Prevention: Previous participants have indicated that they sometimes had troubles navigating the webpage without problems. The website did not act like they thought it would and the website didn't ask for confirmation before they made changes (if any). Do you agree with these comments? Please elaborate on your answer in the text box below and if you agree with them, provide suggestions on how to improve the interface.
+
+Consistency and Standard: Previous participants have indicated that this website was different from other comparable websites that they had used to get the same information. This made it harder for them to understand how to use the this website. Do you agree with these comments? Please elaborate on your answer in the text box below and if you agree with them, provide suggestions on how to improve the interface.
+
+Aesthetic and Minimalist Design: Previous participants have indicated that the website design looked a little cluttered and hence, they had some difficulty in figuring out what to do next. Do you agree with these comments? Please elaborate on your answer in the text box below and if you agree with them, provide suggestions on how to improve the interface.
+
+Help and Documentation: Previous participants have indicated that the websites sometimes did not provide helpful documentation when they could not understand something. Do you agree with these comments? Please elaborate on your answer in the text box below and if you agree with them, provide suggestions on how to address this issue.
+
+Visibility of System Status: Previous participants have indicated that they sometimes found it difficult to understand what the website was doing. Do you agree with these comments? Please elaborate on your answer in the text box below and if you agree with them, provide suggestions on how to address this issue.
