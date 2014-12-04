@@ -5,11 +5,11 @@ from os import listdir
 clean = lambda s : ''.join([c for c in s.strip() if c.isalpha() or c == ' '])
 
 results_file = 'results.csv'
-exclude = ['means.csv', 'comments.csv']
+exclude = ['means.csv', 'comments.csv', 'verification_results.csv']
 
 files = [f for f in listdir('.') if f.endswith('.csv') and f != results_file and f not in exclude]
 
-wrows = [['site', 'question', 'category', 'answer']]
+wrows = [['site', 'question', 'category', 'worker', 'worktime', 'answer']]
 
 site_comments = {}
 
@@ -26,10 +26,12 @@ for f in files:
 			for q, a in zip (questions, answers):
 				a = int(a[1]) if len(a[1]) > 0 else 0
 
-				wrows.append([clean(f.replace('.csv', '')), q[0], q[1], a ])
+				wrows.append([clean(f.replace('.csv', '')), q[0], q[1], row['WorkerId'], row['WorkTimeInSeconds'], a ])
 			
 			if 'Answer.comments' in row and row['Answer.comments']:
 				comments.append(row['Answer.comments'])
+
+
 	site_comments[f.replace('.csv', '')] = comments
 
 with open('comments.csv', 'w') as wfile:
@@ -38,8 +40,8 @@ with open('comments.csv', 'w') as wfile:
 		for c in all_comments:
 			writer.writerow([k, c])
 
-# with open(results_file ,'w') as wfile:
-# 	writer = csv.writer(wfile)
-# 	for r in wrows:
-# 		writer.writerow(r)
+with open(results_file ,'w') as wfile:
+	writer = csv.writer(wfile)
+	for r in wrows:
+		writer.writerow(r)
 
