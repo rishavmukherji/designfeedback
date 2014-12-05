@@ -5,11 +5,11 @@ from os import listdir
 clean = lambda s : ''.join([c for c in s.strip() if c.isalpha() or c == ' '])
 
 results_file = 'results.csv'
-exclude = ['means.csv', 'comments.csv', 'verification_results.csv']
+exclude = ['means.csv', 'comments.csv', 'verification_results.csv', 'worker_scores.csv']
 
 files = [f for f in listdir('.') if f.endswith('.csv') and f != results_file and f not in exclude]
 
-wrows = [['site', 'question', 'category', 'worker', 'worktime', 'answer']]
+wrows = [['site', 'hit', 'question', 'category', 'worker', 'worktime', 'answer']]
 
 site_comments = {}
 
@@ -26,7 +26,7 @@ for f in files:
 			for q, a in zip (questions, answers):
 				a = int(a[1]) if len(a[1]) > 0 else 0
 
-				wrows.append([clean(f.replace('.csv', '')), q[0], q[1], row['WorkerId'], row['WorkTimeInSeconds'], a ])
+				wrows.append([clean(f.replace('.csv', '')),f.replace('.csv', '')[-1], q[0], q[1], row['WorkerId'], row['WorkTimeInSeconds'], a ])
 			
 			if 'Answer.comments' in row and row['Answer.comments']:
 				comments.append(row['Answer.comments'])
