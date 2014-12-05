@@ -59,6 +59,8 @@ with open('worker_scores.csv', 'w') as wfile:
 		writer.writerow([worker, score])
 
 
+
+
 # with open(results_file ,'w') as wfile:
 # 	writer = csv.writer(wfile)
 # 	for r in wrows:
