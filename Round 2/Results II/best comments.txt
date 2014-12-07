@@ -1,0 +1,13 @@
+Conference:
+The only interaction I notice that wasn't fluid was the menu buttons would highlight like you could click them to switch menus before they could be interacted with.  You have to wait till not only the menu highlights, but the cursor turns into the hand icon to select the menu to change pages.
+
+Cricket:
+It would have been great if there were some videos of the precious moments in the matches , photos of the main achievements of the team included in the website
+usualy every website has the main data or link to main data from the home page itself like upcoming matches, last matches scorecard ect, which i couldnt find on this site.
+The score card didnt come as expected in the first click, the total scorecard is expected on clicking match info and rest of the details are to be followed by that.
+Hard to tell that the schedule lists are links until you hover over it.
+
+Book:
+The usual websites of this sort has description and details about the book on the webpage itself. Here the visitor had to navigate to the 3rd party sites link given to collect the details
+There are a lot more widgets on the homepage than expected although the content level is pretty low which can give it a cluttered look
+I didnt get details about the book from this site which i had to collect from the 3rd party site where the book is sold. the site has only name, bibilograpy, couple of videos about the book, neglecting the other key factors.
