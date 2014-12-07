@@ -776,6 +776,9 @@ pre code {
   border-radius: 0;
 }
 
+.form-control {
+  margin-bottom: 10px;
+}
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
@@ -2620,6 +2623,7 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
+  background-color: #f0ad4e;
 }
 
 .btn-sm {
