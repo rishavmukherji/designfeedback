@@ -1,5 +1,6 @@
 import csv
 import numpy as np
+from scipy.stats import sem
 from collections import defaultdict
 from questions import *
 
@@ -32,7 +33,7 @@ for e in experiments:
 
 
 	for k, v in cdata.items():
-		print '"%s","%s",%.2f' % (k, 'Mean', np.mean(v))
+		print '"%s","%s",%.2f,%.2f' % (k, 'Mean', np.mean(v),sem(v) )
 
 
 
