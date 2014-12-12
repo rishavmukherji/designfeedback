@@ -33,14 +33,36 @@
       stroke: #C6080D;
       stroke-width: 3px;
     }
-    .navbar{
-      position: relative; !important; 
-      margin-top: -50px;
-      cursor: auto;
-    }
     .navbar li {
       cursor: pointer;
     }
+
+    .raised{
+      background-color: #FEFEFE;
+      padding: 15px 15px;
+      display: block;
+      box-shadow: 0px 1px 2px #BBB;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+    }
+    .content{
+      padding: 20px;
+      padding-top: 10px;
+      height: 400px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      overflow: scroll;
+      background: rgb(239, 239, 239);
+      border-radius: 10px;
+
+    }
+    .lead{
+      margin-bottom: 0px !important;
+    }
+
     </style>
   </head>
 
@@ -72,18 +94,45 @@
 
       <div class="starter-template">
         <h1 id = "header"></h1>
-        <p class="lead">Diagnostic Questions<br> Mean and standard error of the mean for the initial round of questions <br> 
+        <h3>Diagnostic Questions</h3>
+        <p class="lead"><br> Mean and standard error of the mean for the initial round of questions <br> 
           These responses help determine areas of focus for later feedback</p>
       </div>
 
-      <figure style="width: 80%px; height: 400px;" id="first"></figure>
+    <figure style="width: 80%px; height: 400px;" id="first"></figure>
+
+   <div class="starter-template">
+      <h3 >Verification Questions</h3>
+      <p class="lead">Results of the questions designed to make Turkers engage with the site on each HIT <br> 
+    </div>
+
+    <table id="verification" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Responses</th>
+          <th>Percent Correct</th>
+        </tr>
+      </thead>
+      <tbody id="vbody">
+        <tr></tr>
+
+      </tbody>
+    </table>
 
 
-    </div><!-- /.container -->
 
 
+    <div class="starter-template">
+      <h3 >Design Feedback</h3>
+      <p class="lead">Qualititative feedback from Turkers <br> 
+    </div>
+
+
+    <div id="comments-content" class="content" style="">
+      <p></p>
+    </div>
     <script src="chart.js"></script>
-
-
+    </div>
   </body>
 </html>
