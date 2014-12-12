@@ -13,7 +13,7 @@ names = {
 	'Visibility of System Status' : 'Visibility' 
 	}
 
-with open('cricket_comments.csv', 'r') as rfile:
+with open('results2.csv', 'r') as rfile:
 	reader = csv.DictReader(rfile)
 	rows = [r for r in reader]
 
