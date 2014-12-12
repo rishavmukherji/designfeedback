@@ -1,0 +1,125 @@
+
+<!--
+<ul>
+	<li>Be as specific as possible in your instructions to eliminate ambiguity. For example, when asking workers to extract texts from an image, ask workers to type the texts exactly as shown in the image including capitalization, spaces and punctuations.</li>
+	<li>Include an example of a right answer and a wrong answer. Highlight important information where appropriate.</li>
+	<li>Clarify what you expect if a HIT is not doable because of missing data or other problems.</li>
+</ul>
+--!>
+
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">.alert{
+	font-weight: bold;
+	font-size: 16px;
+}
+.answer{
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+ 
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  padding: 0 20px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15;
+}
+</style>
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p><strong>Before you fill out the survey, please visit the following website : </strong></p>
+<a href="$http://www.harvardcricket.org/" target="_blank">The Harvard Cricket Club (www.harvardcricket.org) </a></div>
+
+<p style="margin-left: 20px;"><strong>And answer the following questions: </strong></p>
+
+<p class="alert">Note that if the majority&nbsp;of your answers to these questions are incorrect, your HIT may not be accepted</p>
+Who is the faculty advisor of the Harvard Cricket Club?: <input class="answer" id="v1" name="v1" type="text" /><br />
+How many people are listed in the alumni section of the club?: <input class="answer" id="v2" name="v2" type="text" /><br />
+Who scored more runs in the Harvard vs UPenn game on Saturday, Sep 21?: <input class="answer" id="v4" name="v4" type="text" /><br />
+<br />
+<br />
+&nbsp;</div>
+<hr/>
+<!-- End Instructions -->
+
+<div>
+	<p><b>Previous participants have made the following comments about this website. Please tell us whether you think the following comments are helpful for the designer of the website and are good feedback. </b></p>
+</div>
+
+<div><p>"I feel that the website was very responsive to every single move that I made. Also, it was extremely simple to find the answers to the questions listed in the HIT. Everything was placed according to common sense.
+"</p><ul class="likert"><li class="likert"><label for=" q0-1">Not helpful &nbsp;</label><input id=" q0-1" name=" q0" type="radio" value="1" /></li><li class="likert"><input id=" q0-5" name=" q0" type="radio" value="5" /><label for=" q0-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"There is some things that are normal to see on the website. The thing that is most different, in my opinion, is the schedule. When you click on the team it opens up a new page with the information on it.
+"</p><ul class="likert"><li class="likert"><label for=" q1-1">Not helpful &nbsp;</label><input id=" q1-1" name=" q1" type="radio" value="1" /></li><li class="likert"><input id=" q1-5" name=" q1" type="radio" value="5" /><label for=" q1-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I did not encounter any technical difficulties, but I did have to search for the information. For example, I had to click on "TEAM" to find out who the faculty adviser and alumni were.
+"</p><ul class="likert"><li class="likert"><label for=" q2-1">Not helpful &nbsp;</label><input id=" q2-1" name=" q2" type="radio" value="1" /></li><li class="likert"><input id=" q2-5" name=" q2" type="radio" value="5" /><label for=" q2-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The website was not cluttered at all. The navigation links at the top were simple to follow, and the information displayed was tight, and legible. No clutter was found in my case.
+"</p><ul class="likert"><li class="likert"><label for=" q3-1">Not helpful &nbsp;</label><input id=" q3-1" name=" q3" type="radio" value="1" /></li><li class="likert"><input id=" q3-5" name=" q3" type="radio" value="5" /><label for=" q3-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I have gathered information from a couple of these websites now and they have all been nearly identical. There is nothing confusing about it or hard about it at all in my opinion.
+"</p><ul class="likert"><li class="likert"><label for=" q4-1">Not helpful &nbsp;</label><input id=" q4-1" name=" q4" type="radio" value="1" /></li><li class="likert"><input id=" q4-5" name=" q4" type="radio" value="5" /><label for=" q4-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I thought the website provided it's job very well, and I knew exactly where to click right away. Every single link I visited provided the exact information that I wanted.
+"</p><ul class="likert"><li class="likert"><label for=" q5-1">Not helpful &nbsp;</label><input id=" q5-1" name=" q5" type="radio" value="1" /></li><li class="likert"><input id=" q5-5" name=" q5" type="radio" value="5" /><label for=" q5-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I neither agree nor disagree with these comments, as I do not normally view cricket websites. However, it did not take me too long to find out the information.
+"</p><ul class="likert"><li class="likert"><label for=" q6-1">Not helpful &nbsp;</label><input id=" q6-1" name=" q6" type="radio" value="1" /></li><li class="likert"><input id=" q6-5" name=" q6" type="radio" value="5" /><label for=" q6-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The website was very similar to sites of the same genre. All of the information that I needed to access was in their respective places, and in plain view.
+"</p><ul class="likert"><li class="likert"><label for=" q7-1">Not helpful &nbsp;</label><input id=" q7-1" name=" q7" type="radio" value="1" /></li><li class="likert"><input id=" q7-5" name=" q7" type="radio" value="5" /><label for=" q7-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I did not find the website design cluttered; however, some people may find the large background image of the cricket team to be a bit too much.
+"</p><ul class="likert"><li class="likert"><label for=" q8-1">Not helpful &nbsp;</label><input id=" q8-1" name=" q8" type="radio" value="1" /></li><li class="likert"><input id=" q8-5" name=" q8" type="radio" value="5" /><label for=" q8-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I did not have any trouble with what the website was doing. When I clicked on a link, it took me to that link quickly and without problem.
+"</p><ul class="likert"><li class="likert"><label for=" q9-1">Not helpful &nbsp;</label><input id=" q9-1" name=" q9" type="radio" value="1" /></li><li class="likert"><input id=" q9-5" name=" q9" type="radio" value="5" /><label for=" q9-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The website is different but if anything it made navigation easier as the links were readily available at the top of the screen.
+"</p><ul class="likert"><li class="likert"><label for=" q10-1">Not helpful &nbsp;</label><input id=" q10-1" name=" q10" type="radio" value="1" /></li><li class="likert"><input id=" q10-5" name=" q10" type="radio" value="5" /><label for=" q10-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"It was never unclear what the purpose of this website was, or how to find information that I was seeking.
+"</p><ul class="likert"><li class="likert"><label for=" q11-1">Not helpful &nbsp;</label><input id=" q11-1" name=" q11" type="radio" value="1" /></li><li class="likert"><input id=" q11-5" name=" q11" type="radio" value="5" /><label for=" q11-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"it looks like many websites i see today, maybe not with the same content, but it was very accessible.
+"</p><ul class="likert"><li class="likert"><label for=" q12-1">Not helpful &nbsp;</label><input id=" q12-1" name=" q12" type="radio" value="1" /></li><li class="likert"><input id=" q12-5" name=" q12" type="radio" value="5" /><label for=" q12-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"Not only did I believe this webpage was not cluttered, I actually thought it was quite spacious.
+"</p><ul class="likert"><li class="likert"><label for=" q13-1">Not helpful &nbsp;</label><input id=" q13-1" name=" q13" type="radio" value="1" /></li><li class="likert"><input id=" q13-5" name=" q13" type="radio" value="5" /><label for=" q13-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I did not have any issues at all so i disagree. everything was where i had expected it to be.
+"</p><ul class="likert"><li class="likert"><label for=" q14-1">Not helpful &nbsp;</label><input id=" q14-1" name=" q14" type="radio" value="1" /></li><li class="likert"><input id=" q14-5" name=" q14" type="radio" value="5" /><label for=" q14-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"Your listed link is broken but I had no problems with the website itself once I got there.
+"</p><ul class="likert"><li class="likert"><label for=" q15-1">Not helpful &nbsp;</label><input id=" q15-1" name=" q15" type="radio" value="1" /></li><li class="likert"><input id=" q15-5" name=" q15" type="radio" value="5" /><label for=" q15-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"It may be hard for someone who doesn't know cricket, but otherwise it's plain and simple.
+"</p><ul class="likert"><li class="likert"><label for=" q16-1">Not helpful &nbsp;</label><input id=" q16-1" name=" q16" type="radio" value="1" /></li><li class="likert"><input id=" q16-5" name=" q16" type="radio" value="5" /><label for=" q16-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"the websites looked clear and were easy for me to use. wasn't confusing or cluttered
+"</p><ul class="likert"><li class="likert"><label for=" q17-1">Not helpful &nbsp;</label><input id=" q17-1" name=" q17" type="radio" value="1" /></li><li class="likert"><input id=" q17-5" name=" q17" type="radio" value="5" /><label for=" q17-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"It was a little difficult just because information wasn't where I expected it to be.
+"</p><ul class="likert"><li class="likert"><label for=" q18-1">Not helpful &nbsp;</label><input id=" q18-1" name=" q18" type="radio" value="1" /></li><li class="likert"><input id=" q18-5" name=" q18" type="radio" value="5" /><label for=" q18-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"There is some information I expected to find in certain sections that wasn't there.
+"</p><ul class="likert"><li class="likert"><label for=" q19-1">Not helpful &nbsp;</label><input id=" q19-1" name=" q19" type="radio" value="1" /></li><li class="likert"><input id=" q19-5" name=" q19" type="radio" value="5" /><label for=" q19-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I actually love how i looks with the pictures and the font.  It isn't cluttered.
+"</p><ul class="likert"><li class="likert"><label for=" q20-1">Not helpful &nbsp;</label><input id=" q20-1" name=" q20" type="radio" value="1" /></li><li class="likert"><input id=" q20-5" name=" q20" type="radio" value="5" /><label for=" q20-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The website was very easy to navigate and I never experienced any issues.
+"</p><ul class="likert"><li class="likert"><label for=" q21-1">Not helpful &nbsp;</label><input id=" q21-1" name=" q21" type="radio" value="1" /></li><li class="likert"><input id=" q21-5" name=" q21" type="radio" value="5" /><label for=" q21-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"i understood the main point as to what the website was trying to do.
+"</p><ul class="likert"><li class="likert"><label for=" q22-1">Not helpful &nbsp;</label><input id=" q22-1" name=" q22" type="radio" value="1" /></li><li class="likert"><input id=" q22-5" name=" q22" type="radio" value="5" /><label for=" q22-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I have no experience with the websites, so it was fine.
+"</p><ul class="likert"><li class="likert"><label for=" q23-1">Not helpful &nbsp;</label><input id=" q23-1" name=" q23" type="radio" value="1" /></li><li class="likert"><input id=" q23-5" name=" q23" type="radio" value="5" /><label for=" q23-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"Don't visit many similar websites, but again, was fine.
+"</p><ul class="likert"><li class="likert"><label for=" q24-1">Not helpful &nbsp;</label><input id=" q24-1" name=" q24" type="radio" value="1" /></li><li class="likert"><input id=" q24-5" name=" q24" type="radio" value="5" /><label for=" q24-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The information on the site was clear and easy to read
+"</p><ul class="likert"><li class="likert"><label for=" q25-1">Not helpful &nbsp;</label><input id=" q25-1" name=" q25" type="radio" value="1" /></li><li class="likert"><input id=" q25-5" name=" q25" type="radio" value="5" /><label for=" q25-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"It looked a bit different but was easy to navigate
+"</p><ul class="likert"><li class="likert"><label for=" q26-1">Not helpful &nbsp;</label><input id=" q26-1" name=" q26" type="radio" value="1" /></li><li class="likert"><input id=" q26-5" name=" q26" type="radio" value="5" /><label for=" q26-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"No, it wasn't cluttered. It was very streamlined.
+"</p><ul class="likert"><li class="likert"><label for=" q27-1">Not helpful &nbsp;</label><input id=" q27-1" name=" q27" type="radio" value="1" /></li><li class="likert"><input id=" q27-5" name=" q27" type="radio" value="5" /><label for=" q27-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"kind of hard to understand with alot of writing
+"</p><ul class="likert"><li class="likert"><label for=" q28-1">Not helpful &nbsp;</label><input id=" q28-1" name=" q28" type="radio" value="1" /></li><li class="likert"><input id=" q28-5" name=" q28" type="radio" value="5" /><label for=" q28-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I felt it was an easy & straight-forward format
+"</p><ul class="likert"><li class="likert"><label for=" q29-1">Not helpful &nbsp;</label><input id=" q29-1" name=" q29" type="radio" value="1" /></li><li class="likert"><input id=" q29-5" name=" q29" type="radio" value="5" /><label for=" q29-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The site is typical of other sites I have seen
+"</p><ul class="likert"><li class="likert"><label for=" q30-1">Not helpful &nbsp;</label><input id=" q30-1" name=" q30" type="radio" value="1" /></li><li class="likert"><input id=" q30-5" name=" q30" type="radio" value="5" /><label for=" q30-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The design is fine, not cluttered at all.
+"</p><ul class="likert"><li class="likert"><label for=" q31-1">Not helpful &nbsp;</label><input id=" q31-1" name=" q31" type="radio" value="1" /></li><li class="likert"><input id=" q31-5" name=" q31" type="radio" value="5" /><label for=" q31-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I had no trouble navigating the website.
+"</p><ul class="likert"><li class="likert"><label for=" q32-1">Not helpful &nbsp;</label><input id=" q32-1" name=" q32" type="radio" value="1" /></li><li class="likert"><input id=" q32-5" name=" q32" type="radio" value="5" /><label for=" q32-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I think the site is easy to understnad
+"</p><ul class="likert"><li class="likert"><label for=" q33-1">Not helpful &nbsp;</label><input id=" q33-1" name=" q33" type="radio" value="1" /></li><li class="likert"><input id=" q33-5" name=" q33" type="radio" value="5" /><label for=" q33-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"It was actually not cluttered at all
+"</p><ul class="likert"><li class="likert"><label for=" q34-1">Not helpful &nbsp;</label><input id=" q34-1" name=" q34" type="radio" value="1" /></li><li class="likert"><input id=" q34-5" name=" q34" type="radio" value="5" /><label for=" q34-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The links and everything worked fine
+"</p><ul class="likert"><li class="likert"><label for=" q35-1">Not helpful &nbsp;</label><input id=" q35-1" name=" q35" type="radio" value="1" /></li><li class="likert"><input id=" q35-5" name=" q35" type="radio" value="5" /><label for=" q35-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I thought it was neat and organized.
+"</p><ul class="likert"><li class="likert"><label for=" q36-1">Not helpful &nbsp;</label><input id=" q36-1" name=" q36" type="radio" value="1" /></li><li class="likert"><input id=" q36-5" name=" q36" type="radio" value="5" /><label for=" q36-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"The website is easy to understand.
+"</p><ul class="likert"><li class="likert"><label for=" q37-1">Not helpful &nbsp;</label><input id=" q37-1" name=" q37" type="radio" value="1" /></li><li class="likert"><input id=" q37-5" name=" q37" type="radio" value="5" /><label for=" q37-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I think the navigation worked well
+"</p><ul class="likert"><li class="likert"><label for=" q38-1">Not helpful &nbsp;</label><input id=" q38-1" name=" q38" type="radio" value="1" /></li><li class="likert"><input id=" q38-5" name=" q38" type="radio" value="5" /><label for=" q38-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"It seemed like other sites to me.
+"</p><ul class="likert"><li class="likert"><label for=" q39-1">Not helpful &nbsp;</label><input id=" q39-1" name=" q39" type="radio" value="1" /></li><li class="likert"><input id=" q39-5" name=" q39" type="radio" value="5" /><label for=" q39-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"Website was clear to understand.
+"</p><ul class="likert"><li class="likert"><label for=" q40-1">Not helpful &nbsp;</label><input id=" q40-1" name=" q40" type="radio" value="1" /></li><li class="likert"><input id=" q40-5" name=" q40" type="radio" value="5" /><label for=" q40-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"No, i had no issues whatsoever.
+"</p><ul class="likert"><li class="likert"><label for=" q41-1">Not helpful &nbsp;</label><input id=" q41-1" name=" q41" type="radio" value="1" /></li><li class="likert"><input id=" q41-5" name=" q41" type="radio" value="5" /><label for=" q41-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"I understood what it was doing.
+"</p><ul class="likert"><li class="likert"><label for=" q42-1">Not helpful &nbsp;</label><input id=" q42-1" name=" q42" type="radio" value="1" /></li><li class="likert"><input id=" q42-5" name=" q42" type="radio" value="5" /><label for=" q42-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;<div><p>"everything worked great for me"</p><ul class="likert"><li class="likert"><label for=" q43-1">Not helpful &nbsp;</label><input id=" q43-1" name=" q43" type="radio" value="1" /></li><li class="likert"><input id=" q43-5" name=" q43" type="radio" value="5" /><label for=" q43-5">&nbsp; &nbsp;Helpful</label></li></ul></div>&nbsp;
+<hr/>
+
+<div>
+ <p>Please mention any other comments about the design of the website or the survey here.</p> 
+<input name="comments" style="height:100px; width:600px;" type="text" /></div>
+<br />
+<!-- End Content Body -->
+</section>
+<!-- close container -->
+<style type="text/css">fieldset {
+    padding: 10px;
+    background:#fbfbfb;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+</style>

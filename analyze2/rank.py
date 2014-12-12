@@ -13,7 +13,7 @@ names = {
 	'Visibility of System Status' : 'Visibility' 
 	}
 
-with open('results2.csv', 'r') as rfile:
+with open('cricket_comments.csv', 'r') as rfile:
 	reader = csv.DictReader(rfile)
 	rows = [r for r in reader]
 
@@ -30,3 +30,4 @@ for site, rows in sites.items():
 	print json.dumps(rows)
 
 #print '\n'.join(map(lambda r : r['comment'], rows))
+

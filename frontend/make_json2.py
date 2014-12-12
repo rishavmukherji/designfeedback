@@ -1,11 +1,12 @@
 import csv, json
 import numpy as np
+import pylab as plt
 from scipy.stats import sem
 from collections import defaultdict
 from questions import *
 
 def main():
-	verification()
+	check_mean()
 
 vquestions = {
 	'conference-q1' : 'Who is the president of the Executive Board?',
@@ -20,6 +21,22 @@ vquestions = {
 	'andrew-q2' : 'What email address should send any questions or feedback relating to the site to?',
 	'andrew-q4' : 'If player 1 has a 51% chance of winning one point, what is the probability they will win a five set match (use the tennis simulation page)?',
 }
+
+
+def check_mean():
+	with open('../analyze/results.csv', 'rU') as rfile:
+		reader = csv.DictReader(rfile)
+		rows = [r for r in reader]
+	workers = defaultdict(list)
+	for r in rows:
+		workers[r['worker']].append(int(r['answer']))
+
+	means = [np.mean(v) for v in workers.values()]
+	print len(means)
+	print np.std(means)
+	print len([m for m in means if m >= 2.5 and m <= 3.5])
+	plt.hist(means, bins = 20, color = '#262626')
+	plt.show()
 
 def verification():
 	with open('../analyze/verification_results.csv', 'r') as rfile:
